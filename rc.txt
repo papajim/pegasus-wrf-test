@@ -1,0 +1,6 @@
+#hydro.namelist https://raw.githubusercontent.com/ISHITADG/wrfstatic/master/hydro.namelist site="GitHub"
+#namelist.hrldas https://raw.githubusercontent.com/ISHITADG/wrfstatic/master/namelist.hrldas site="GitHub"
+hydro.namelist file://${PWD}/data/hydro.namelist site="local"
+namelist.hrldas file://${PWD}/data/namelist.hrldas site="local"
+wrf_db.tar.gz file://${PWD}/data/wrf_db.tar.gz site="local"
+FORCING.tar.gz https://github.com/ISHITADG/wrfstatic/raw/master/FORCING.tar.gz site="GitHub"

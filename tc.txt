@@ -1,0 +1,19 @@
+#### Docker ####
+cont wrf_image {
+    type "docker"
+    image_site "GitHub"
+    image "docker:///ishitadg/wrfhv5"
+    #image_site "local"
+    #image "file:///home/georgpap/GitHub/dynamo/ishita-wrf/bin/wrf_image.tar"
+}
+
+tr wrf_wrapper {
+    site local {
+        container "wrf_image"
+        pfn "${PWD}/bin/wrf_wrapper.sh"
+        arch "x86_64"
+        os "LINUX"
+        type "STAGEABLE"
+        profile pegasus "gridstart" "PegasusLite.None"
+    }
+}
